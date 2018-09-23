@@ -5,8 +5,8 @@
 yarn.lock
 yarn-error.log
 
-# git
-
+# source-map
+*.map
 
 # IDE
 .vscode

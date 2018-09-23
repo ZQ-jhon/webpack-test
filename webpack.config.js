@@ -6,36 +6,15 @@ module.exports = {
     entry: './index.js',
     context: path.resolve(__dirname),
     output: {
-        path: __dirname + 'dist',
-        filename: 'bundle-[hash].js',
+        path: __dirname + '/dist',
+        filename: 'bundle.js',
     },
     devServer: {
         contentBase: "./dist",//本地服务器加载index.html页面所在的目录，这里写的是根目录
         inline: true, //实时刷新,
-        port: 8333,
         historyApiFallback: true,//不跳转
-        hot: true,
     },
     mode: "development",
-    module: {
-        rules: [
-            {
-                test: /(\.jsx|\.js)$/,
-                use: {
-                    loader: "babel-loader",
-                    options: {
-                        presets: [
-                            "env", "react"
-                        ]
-                    }
-                },
-                exclude: /node_modules/,
-            }
-        ]
-    },
-    resolve: {
-    },
     devtool: 'source-map',
-    plugins: [
-    ]
+   
 };
