@@ -1,0 +1,12 @@
+# node
+/node_modules
+
+# yarn
+yarn.lock
+yarn-error.log
+
+# git
+
+
+# IDE
+.vscode
