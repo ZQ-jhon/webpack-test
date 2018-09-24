@@ -15,6 +15,6 @@ module.exports = {
         historyApiFallback: true,//不跳转
     },
     mode: "development",
-    devtool: 'source-map',
+ 
    
 };
