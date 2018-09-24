@@ -1,2 +1,2 @@
 
-module.exports = 123223213132132;
+module.exports = `some data from 'src/main.ts'`;
